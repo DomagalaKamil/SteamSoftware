@@ -28,45 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.registerBtn = new System.Windows.Forms.Button();
-            this.emailTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.verifyBtn = new System.Windows.Forms.Button();
-            this.confirmEmailTextBox = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.emailPanel = new System.Windows.Forms.Panel();
             this.continueBtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.verificationCodeTxt = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.confirmEmailTextBox = new System.Windows.Forms.TextBox();
+            this.verifyBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.registerBtn = new System.Windows.Forms.Button();
+            this.detailsPanel = new System.Windows.Forms.Panel();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.emailPanel.SuspendLayout();
+            this.detailsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // emailPanel
             // 
-            this.panel1.Controls.Add(this.continueBtn);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.confirmEmailTextBox);
-            this.panel1.Controls.Add(this.verifyBtn);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.emailTextBox);
-            this.panel1.Location = new System.Drawing.Point(105, 97);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(459, 698);
-            this.panel1.TabIndex = 0;
+            this.emailPanel.Controls.Add(this.continueBtn);
+            this.emailPanel.Controls.Add(this.label3);
+            this.emailPanel.Controls.Add(this.verificationCodeTxt);
+            this.emailPanel.Controls.Add(this.label2);
+            this.emailPanel.Controls.Add(this.confirmEmailTextBox);
+            this.emailPanel.Controls.Add(this.verifyBtn);
+            this.emailPanel.Controls.Add(this.label1);
+            this.emailPanel.Controls.Add(this.emailTextBox);
+            this.emailPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.emailPanel.Location = new System.Drawing.Point(0, 0);
+            this.emailPanel.Name = "emailPanel";
+            this.emailPanel.Size = new System.Drawing.Size(599, 683);
+            this.emailPanel.TabIndex = 0;
+            // 
+            // continueBtn
+            // 
+            this.continueBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
+            this.continueBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.continueBtn.Location = new System.Drawing.Point(211, 508);
+            this.continueBtn.Name = "continueBtn";
+            this.continueBtn.Size = new System.Drawing.Size(153, 41);
+            this.continueBtn.TabIndex = 11;
+            this.continueBtn.Text = "Continue";
+            this.continueBtn.UseVisualStyleBackColor = false;
+            this.continueBtn.Click += new System.EventHandler(this.continueBtn_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
+            this.label3.Location = new System.Drawing.Point(106, 434);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(302, 16);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Insert verification code sent to your Email Address";
+            // 
+            // verificationCodeTxt
+            // 
+            this.verificationCodeTxt.BackColor = System.Drawing.Color.White;
+            this.verificationCodeTxt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.verificationCodeTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.verificationCodeTxt.Location = new System.Drawing.Point(109, 453);
+            this.verificationCodeTxt.Name = "verificationCodeTxt";
+            this.verificationCodeTxt.Size = new System.Drawing.Size(376, 31);
+            this.verificationCodeTxt.TabIndex = 9;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
+            this.label2.Location = new System.Drawing.Point(104, 193);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 16);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Confirm your Address";
+            // 
+            // confirmEmailTextBox
+            // 
+            this.confirmEmailTextBox.BackColor = System.Drawing.Color.White;
+            this.confirmEmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.confirmEmailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmEmailTextBox.Location = new System.Drawing.Point(107, 212);
+            this.confirmEmailTextBox.Name = "confirmEmailTextBox";
+            this.confirmEmailTextBox.Size = new System.Drawing.Size(376, 31);
+            this.confirmEmailTextBox.TabIndex = 7;
+            // 
+            // verifyBtn
+            // 
+            this.verifyBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
+            this.verifyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.verifyBtn.Location = new System.Drawing.Point(209, 272);
+            this.verifyBtn.Name = "verifyBtn";
+            this.verifyBtn.Size = new System.Drawing.Size(153, 41);
+            this.verifyBtn.TabIndex = 6;
+            this.verifyBtn.Text = "Verify";
+            this.verifyBtn.UseVisualStyleBackColor = false;
+            this.verifyBtn.Click += new System.EventHandler(this.verifyBtn_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
+            this.label1.Location = new System.Drawing.Point(104, 113);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(95, 16);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Email Address";
+            // 
+            // emailTextBox
+            // 
+            this.emailTextBox.BackColor = System.Drawing.Color.White;
+            this.emailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailTextBox.Location = new System.Drawing.Point(107, 132);
+            this.emailTextBox.Name = "emailTextBox";
+            this.emailTextBox.Size = new System.Drawing.Size(376, 31);
+            this.emailTextBox.TabIndex = 3;
             // 
             // registerBtn
             // 
@@ -79,182 +167,31 @@
             this.registerBtn.Text = "Register";
             this.registerBtn.UseVisualStyleBackColor = false;
             // 
-            // emailTextBox
+            // detailsPanel
             // 
-            this.emailTextBox.BackColor = System.Drawing.Color.White;
-            this.emailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.emailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailTextBox.Location = new System.Drawing.Point(44, 126);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.Size = new System.Drawing.Size(376, 31);
-            this.emailTextBox.TabIndex = 3;
+            this.detailsPanel.Controls.Add(this.dateTimePicker1);
+            this.detailsPanel.Controls.Add(this.label8);
+            this.detailsPanel.Controls.Add(this.registerBtn);
+            this.detailsPanel.Controls.Add(this.textBox6);
+            this.detailsPanel.Controls.Add(this.label7);
+            this.detailsPanel.Controls.Add(this.label6);
+            this.detailsPanel.Controls.Add(this.label5);
+            this.detailsPanel.Controls.Add(this.label4);
+            this.detailsPanel.Controls.Add(this.textBox4);
+            this.detailsPanel.Controls.Add(this.textBox3);
+            this.detailsPanel.Controls.Add(this.textBox2);
+            this.detailsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.detailsPanel.Location = new System.Drawing.Point(0, 0);
+            this.detailsPanel.Name = "detailsPanel";
+            this.detailsPanel.Size = new System.Drawing.Size(599, 683);
+            this.detailsPanel.TabIndex = 2;
             // 
-            // label1
+            // dateTimePicker1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
-            this.label1.Location = new System.Drawing.Point(41, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Email Address";
-            // 
-            // verifyBtn
-            // 
-            this.verifyBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
-            this.verifyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.verifyBtn.Location = new System.Drawing.Point(146, 266);
-            this.verifyBtn.Name = "verifyBtn";
-            this.verifyBtn.Size = new System.Drawing.Size(153, 41);
-            this.verifyBtn.TabIndex = 6;
-            this.verifyBtn.Text = "Verify";
-            this.verifyBtn.UseVisualStyleBackColor = false;
-            // 
-            // confirmEmailTextBox
-            // 
-            this.confirmEmailTextBox.BackColor = System.Drawing.Color.White;
-            this.confirmEmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.confirmEmailTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmEmailTextBox.Location = new System.Drawing.Point(44, 206);
-            this.confirmEmailTextBox.Name = "confirmEmailTextBox";
-            this.confirmEmailTextBox.Size = new System.Drawing.Size(376, 31);
-            this.confirmEmailTextBox.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
-            this.label2.Location = new System.Drawing.Point(41, 187);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 16);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Confirm your Address";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.registerBtn);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Location = new System.Drawing.Point(650, 249);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(643, 675);
-            this.panel2.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(44, 451);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 31);
-            this.textBox1.TabIndex = 9;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
-            this.label3.Location = new System.Drawing.Point(41, 432);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(302, 16);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Insert verification code sent to your Email Address";
-            // 
-            // continueBtn
-            // 
-            this.continueBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
-            this.continueBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.continueBtn.Location = new System.Drawing.Point(146, 506);
-            this.continueBtn.Name = "continueBtn";
-            this.continueBtn.Size = new System.Drawing.Size(153, 41);
-            this.continueBtn.TabIndex = 11;
-            this.continueBtn.Text = "Continue";
-            this.continueBtn.UseVisualStyleBackColor = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(123, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(376, 31);
-            this.textBox2.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(123, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(376, 31);
-            this.textBox3.TabIndex = 5;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(123, 230);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(376, 31);
-            this.textBox4.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
-            this.label4.Location = new System.Drawing.Point(120, 54);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 16);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Name";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
-            this.label5.Location = new System.Drawing.Point(120, 132);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 16);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Password";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
-            this.label6.Location = new System.Drawing.Point(120, 211);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 16);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Confirm Password";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
-            this.label7.Location = new System.Drawing.Point(120, 293);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 16);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Date of Birth";
+            this.dateTimePicker1.Location = new System.Drawing.Point(123, 312);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(376, 20);
+            this.dateTimePicker1.TabIndex = 3;
             // 
             // label8
             // 
@@ -277,44 +214,111 @@
             this.textBox6.Size = new System.Drawing.Size(376, 31);
             this.textBox6.TabIndex = 16;
             // 
-            // dateTimePicker1
+            // label7
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(123, 312);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(376, 20);
-            this.dateTimePicker1.TabIndex = 3;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
+            this.label7.Location = new System.Drawing.Point(120, 293);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Date of Birth";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
+            this.label6.Location = new System.Drawing.Point(120, 211);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Confirm Password";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
+            this.label5.Location = new System.Drawing.Point(120, 132);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 16);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Password";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(157)))), ((int)(((byte)(194)))));
+            this.label4.Location = new System.Drawing.Point(120, 54);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Name";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.Color.White;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(123, 230);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(376, 31);
+            this.textBox4.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BackColor = System.Drawing.Color.White;
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(123, 151);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(376, 31);
+            this.textBox3.TabIndex = 5;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(123, 77);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(376, 31);
+            this.textBox2.TabIndex = 4;
             // 
             // accountCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
-            this.ClientSize = new System.Drawing.Size(1393, 1064);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(599, 683);
+            this.Controls.Add(this.emailPanel);
+            this.Controls.Add(this.detailsPanel);
             this.Name = "accountCreation";
             this.Text = "accountCreation";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.emailPanel.ResumeLayout(false);
+            this.emailPanel.PerformLayout();
+            this.detailsPanel.ResumeLayout(false);
+            this.detailsPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel emailPanel;
         private System.Windows.Forms.Button registerBtn;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox confirmEmailTextBox;
         private System.Windows.Forms.Button verifyBtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel detailsPanel;
         private System.Windows.Forms.Button continueBtn;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox verificationCodeTxt;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox6;
