@@ -39,16 +39,16 @@
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.registerBtn = new System.Windows.Forms.Button();
             this.detailsPanel = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dobDatePicker = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.phoneTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.confirmPasswordTextBox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.emailPanel.SuspendLayout();
             this.detailsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -166,32 +166,33 @@
             this.registerBtn.TabIndex = 1;
             this.registerBtn.Text = "Register";
             this.registerBtn.UseVisualStyleBackColor = false;
+            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // detailsPanel
             // 
-            this.detailsPanel.Controls.Add(this.dateTimePicker1);
+            this.detailsPanel.Controls.Add(this.dobDatePicker);
             this.detailsPanel.Controls.Add(this.label8);
             this.detailsPanel.Controls.Add(this.registerBtn);
-            this.detailsPanel.Controls.Add(this.textBox6);
+            this.detailsPanel.Controls.Add(this.phoneTextBox);
             this.detailsPanel.Controls.Add(this.label7);
             this.detailsPanel.Controls.Add(this.label6);
             this.detailsPanel.Controls.Add(this.label5);
             this.detailsPanel.Controls.Add(this.label4);
-            this.detailsPanel.Controls.Add(this.textBox4);
-            this.detailsPanel.Controls.Add(this.textBox3);
-            this.detailsPanel.Controls.Add(this.textBox2);
+            this.detailsPanel.Controls.Add(this.confirmPasswordTextBox);
+            this.detailsPanel.Controls.Add(this.passwordTextBox);
+            this.detailsPanel.Controls.Add(this.usernameTextBox);
             this.detailsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.detailsPanel.Location = new System.Drawing.Point(0, 0);
             this.detailsPanel.Name = "detailsPanel";
             this.detailsPanel.Size = new System.Drawing.Size(599, 683);
             this.detailsPanel.TabIndex = 2;
             // 
-            // dateTimePicker1
+            // dobDatePicker
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(123, 312);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(376, 20);
-            this.dateTimePicker1.TabIndex = 3;
+            this.dobDatePicker.Location = new System.Drawing.Point(123, 312);
+            this.dobDatePicker.Name = "dobDatePicker";
+            this.dobDatePicker.Size = new System.Drawing.Size(376, 20);
+            this.dobDatePicker.TabIndex = 3;
             // 
             // label8
             // 
@@ -204,15 +205,15 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Phone Number (Optional)";
             // 
-            // textBox6
+            // phoneTextBox
             // 
-            this.textBox6.BackColor = System.Drawing.Color.White;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(123, 382);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(376, 31);
-            this.textBox6.TabIndex = 16;
+            this.phoneTextBox.BackColor = System.Drawing.Color.White;
+            this.phoneTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.phoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneTextBox.Location = new System.Drawing.Point(123, 382);
+            this.phoneTextBox.Name = "phoneTextBox";
+            this.phoneTextBox.Size = new System.Drawing.Size(376, 31);
+            this.phoneTextBox.TabIndex = 16;
             // 
             // label7
             // 
@@ -258,35 +259,35 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Name";
             // 
-            // textBox4
+            // confirmPasswordTextBox
             // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(123, 230);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(376, 31);
-            this.textBox4.TabIndex = 6;
+            this.confirmPasswordTextBox.BackColor = System.Drawing.Color.White;
+            this.confirmPasswordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.confirmPasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPasswordTextBox.Location = new System.Drawing.Point(123, 230);
+            this.confirmPasswordTextBox.Name = "confirmPasswordTextBox";
+            this.confirmPasswordTextBox.Size = new System.Drawing.Size(376, 31);
+            this.confirmPasswordTextBox.TabIndex = 6;
             // 
-            // textBox3
+            // passwordTextBox
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(123, 151);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(376, 31);
-            this.textBox3.TabIndex = 5;
+            this.passwordTextBox.BackColor = System.Drawing.Color.White;
+            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.Location = new System.Drawing.Point(123, 151);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(376, 31);
+            this.passwordTextBox.TabIndex = 5;
             // 
-            // textBox2
+            // usernameTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(123, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(376, 31);
-            this.textBox2.TabIndex = 4;
+            this.usernameTextBox.BackColor = System.Drawing.Color.White;
+            this.usernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.usernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTextBox.Location = new System.Drawing.Point(123, 77);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(376, 31);
+            this.usernameTextBox.TabIndex = 4;
             // 
             // accountCreation
             // 
@@ -319,15 +320,15 @@
         private System.Windows.Forms.Button continueBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox verificationCodeTxt;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dobDatePicker;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox phoneTextBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox confirmPasswordTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox;
+        private System.Windows.Forms.TextBox usernameTextBox;
     }
 }
