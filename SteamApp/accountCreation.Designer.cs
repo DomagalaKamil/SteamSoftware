@@ -49,12 +49,14 @@
             this.confirmPasswordTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.closeBtn = new System.Windows.Forms.Button();
             this.emailPanel.SuspendLayout();
             this.detailsPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // emailPanel
             // 
+            this.emailPanel.Controls.Add(this.closeBtn);
             this.emailPanel.Controls.Add(this.continueBtn);
             this.emailPanel.Controls.Add(this.label3);
             this.emailPanel.Controls.Add(this.verificationCodeTxt);
@@ -289,6 +291,16 @@
             this.usernameTextBox.Size = new System.Drawing.Size(376, 31);
             this.usernameTextBox.TabIndex = 4;
             // 
+            // closeBtn
+            // 
+            this.closeBtn.Location = new System.Drawing.Point(512, 648);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(75, 23);
+            this.closeBtn.TabIndex = 12;
+            this.closeBtn.Text = "Close";
+            this.closeBtn.UseVisualStyleBackColor = true;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            // 
             // accountCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,5 +342,6 @@
         private System.Windows.Forms.TextBox confirmPasswordTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.Button closeBtn;
     }
 }

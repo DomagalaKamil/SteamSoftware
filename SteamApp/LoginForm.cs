@@ -81,7 +81,7 @@ namespace SteamApp
                         MessageBox.Show("Login successful!");
 
                         // Proceed to the main application form
-                        MainForm mainForm = new MainForm();
+                        MainForm mainForm = new MainForm(username);
                         mainForm.Show();
                         this.Hide();
                     }

@@ -43,6 +43,7 @@
             this.passwordBackBtn = new System.Windows.Forms.Button();
             this.passRecoveryBtn = new System.Windows.Forms.Button();
             this.emailTextBox = new System.Windows.Forms.TextBox();
+            this.closeBtn = new System.Windows.Forms.Button();
             this.nameRecoveryPanel.SuspendLayout();
             this.optionsPanel.SuspendLayout();
             this.passwordRecoveryPanel.SuspendLayout();
@@ -109,6 +110,7 @@
             // 
             // optionsPanel
             // 
+            this.optionsPanel.Controls.Add(this.closeBtn);
             this.optionsPanel.Controls.Add(this.passwordPanelBtn);
             this.optionsPanel.Controls.Add(this.namePanelBtn);
             this.optionsPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -232,15 +234,25 @@
             this.emailTextBox.Size = new System.Drawing.Size(376, 31);
             this.emailTextBox.TabIndex = 5;
             // 
+            // closeBtn
+            // 
+            this.closeBtn.Location = new System.Drawing.Point(597, 726);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(75, 23);
+            this.closeBtn.TabIndex = 11;
+            this.closeBtn.Text = "Close";
+            this.closeBtn.UseVisualStyleBackColor = true;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            // 
             // recoveryFrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(20)))), ((int)(((byte)(33)))));
             this.ClientSize = new System.Drawing.Size(684, 761);
-            this.Controls.Add(this.passwordRecoveryPanel);
             this.Controls.Add(this.optionsPanel);
             this.Controls.Add(this.nameRecoveryPanel);
+            this.Controls.Add(this.passwordRecoveryPanel);
             this.Name = "recoveryFrom";
             this.Text = "recoveryFrom";
             this.Load += new System.EventHandler(this.recoveryFrom_Load);
@@ -271,5 +283,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.Button closeBtn;
     }
 }

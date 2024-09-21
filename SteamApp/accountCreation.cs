@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Text.RegularExpressions;
 
 namespace SteamApp
 {
@@ -28,6 +29,13 @@ namespace SteamApp
             string username = usernameTextBox.Text;
             string phoneNumber = phoneTextBox.Text;
 
+            // Check if the email is in valid format
+            if (!IsValidEmail(email))
+            {
+                MessageBox.Show("The email address is not in the correct format. Please provide a valid email address.", "Invalid Email", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Stop further execution if email is invalid
+            }
+
             // Check if email and confirmation email match
             if (email != confirmEmail)
             {
@@ -47,7 +55,7 @@ namespace SteamApp
             vCode = rnd.Next(1000, 10000); // Generates a number between 1000 and 9999
 
             string from, pass, mail;
-            from = ""; //Your App Password
+            from = ""; //Your App Email
             mail = vCode.ToString();
             pass = ""; // Your App Password
             MailMessage message = new MailMessage();
@@ -71,6 +79,14 @@ namespace SteamApp
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        // Method to validate if the email is in the correct format
+        private bool IsValidEmail(string email)
+        {
+            // Regular expression to validate email format
+            string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+            return Regex.IsMatch(email, emailPattern);
         }
 
         // Method to check if the email, username, or phone number are already taken
@@ -220,6 +236,11 @@ namespace SteamApp
                 // Handle potential errors
                 MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
